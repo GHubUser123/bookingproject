@@ -1,4 +1,4 @@
-A Spare time php project
+A spare time php project
 ------------------------------------------------------------
 
 **PHP Time Booking System**
