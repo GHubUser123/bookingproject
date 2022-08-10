@@ -1,0 +1,19 @@
+database 'bookingcalendar' includes as follows:
+
+CREATE TABLE `bookings` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `date` date NOT NULL,
+ `name` varchar(255) NOT NULL,
+ `timeslot` varchar(255) NOT NULL,
+ `email` varchar(255) NOT NULL
+ PRIMARY KEY (`id`)
+) 
+
+CREATE TABLE `users` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `user_id` bigint(20) NOT NULL,
+  `user_name` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+  PRIMARY KEY ('id')
+) 
